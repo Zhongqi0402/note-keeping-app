@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation" app:startDestination="@id/mainFragment2">
+
+    <fragment android:id="@+id/mainFragment2" android:name="ui.assignments.a4notes.MainFragment"
+              android:label="MainFragment">
+        <action android:id="@+id/action_mainFragment2_to_addFragment" app:destination="@id/addFragment"/>
+        <action android:id="@+id/action_mainFragment2_to_editFragment" app:destination="@id/editFragment"/>
+    </fragment>
+    <fragment android:id="@+id/addFragment" android:name="ui.assignments.a4notes.AddFragment"
+              android:label="AddFragment">
+        <action android:id="@+id/action_addFragment_to_mainFragment2" app:destination="@id/mainFragment2"/>
+    </fragment>
+    <fragment android:id="@+id/editFragment" android:name="ui.assignments.a4notes.EditFragment"
+              android:label="EditFragment">
+        <action android:id="@+id/action_editFragment_to_mainFragment2" app:destination="@id/mainFragment2"/>
+    </fragment>
+</navigation>

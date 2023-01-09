@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent" android:orientation="vertical">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:paddingTop="10dp" android:paddingBottom="5dp"
+            android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        <Switch
+                android:text="Important"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/important_switch"
+                android:textAlignment="center" android:layout_alignParentEnd="false"
+                android:layout_alignParentStart="false" android:minHeight="32dp" tools:ignore="TouchTargetSizeCheck"/>
+        <Switch
+                android:text="Archived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/archive_switch"
+                android:layout_alignParentRight="true" android:minHeight="32dp" tools:ignore="TouchTargetSizeCheck"/>
+    </RelativeLayout>
+    <EditText android:inputType="text"
+              android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"
+              android:imeOptions="actionDone"
+              android:id="@+id/edit_title"/>
+    <EditText android:inputType="textMultiLine"
+              android:layout_width="match_parent" android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp" android:layout_marginTop="2dp" android:layout_marginBottom="2dp"
+              android:id="@+id/edit_content" android:layout_height="wrap_content" android:textAlignment="gravity"/>
+</LinearLayout>
